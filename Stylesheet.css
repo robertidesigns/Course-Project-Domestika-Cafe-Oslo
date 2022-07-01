@@ -1,0 +1,700 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Re-formateo de cajas */
+
+*{
+    box-sizing: border-box;
+}
+
+/* ACTUAL CODE */
+
+/* GENERIC */
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+	font-size: 44pt;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	color: #f5f0ed;
+}
+
+h2{
+	font-size: 28pt;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+}
+
+h3{
+	font-size: 24pt;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+p{
+	font-size: 16pt;
+}
+
+hr{
+	width: 8%;
+	margin: 0 auto;
+	height: 3px;
+	background-color: #f5f0ed;
+	color: #f5f0ed;
+}
+
+span{
+	font-size: 14pt;
+	text-transform: uppercase;
+	height: 40px;
+	width: 350px;
+	display: flex;
+	color: #f5f0ed;
+	border: 1px solid #f5f0ed;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	margin-top: 5%;
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* SPECIFICS */
+
+.Header{
+	position: fixed;
+	top: 0;
+	height: 60px;
+	width: 100%;
+	padding: 0 1%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.lanzador{
+	display: none;
+	background-color: #d03b40;
+	width: 50px;
+	height: 50px;
+	padding: 1%;
+}
+
+.lanzador img{
+	height: 100%;
+}
+
+.menu{
+	width: 60%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.Header a{
+	margin: 1%;
+	color: #f5f0ed;
+	text-transform: uppercase;
+}
+
+.Box1{
+	background-image: url(Imágenes/Fondo1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 900px;
+	background-position: center;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*
+
+WHAT I USED TO CENTRE IN THE MIDDLE
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	AND IN THE INNER DIV
+
+	display: inline-block;
+	margin: auto;
+	position: absolute;
+
+*/
+
+.Box1 img{
+	max-width: 100%;
+	height: 100%;
+}
+
+.Box1Text{
+	display: inline-block;
+	margin: auto;
+	position: absolute;
+}
+
+.Box1Text h1{
+	display: block;
+	max-width: 600px;
+	margin: auto;
+	padding-bottom: 2%;
+}
+
+.Box1Text p{
+	display: block;
+	max-width: 34%;
+	text-align: center;
+	margin: auto;
+	padding-top: 2%;
+	color: #f5f0ed;
+}
+
+.Box2, .Box10{
+	background-color: #d03b40;
+	width: 50%;
+	height: 450px;
+	float: left;
+	color: #ded6c0;
+}
+
+
+.Box3{
+	background-color: #ded6c0;
+	width: 50%;
+	height: 450px;
+	float: left;
+	color: #d03b40;
+}
+
+.Box2, .Box3, .Box10{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*
+
+HERE I TRIED NOT USING THE INNER DIV TECHNIQUE, BUT IT DOESN'T WORK FOR H2 AND P TOGETHER
+
+IF IT IS JUST ONE ELEMENT, IT WORKS - THIS IS WHAT I DID
+
+.BOX2{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.BOX2 ELEMENT{
+	display: inline-block;
+	margin: auto;
+	position: absolute;
+	width: xxx%;
+	text-align: center;
+}
+
+*/
+
+.Box2Text, .Box3Text{
+	display: inline-block;
+	margin: auto;
+	position: absolute;
+}
+
+.Box2Text h2, .Box3Text h2{
+	display: block;
+	margin: auto;
+	width: 45%;
+	margin-bottom: 2%;
+}
+
+.Box2Text p, .Box3Text p{
+	display: block;
+	margin: auto;
+	width: 58%;
+	text-align: center;
+	margin-top: 2%;
+}
+
+.Box10 .Box2Text h2{
+	width: 60%;
+}
+
+.Box11{
+	clear: both;
+	height: 200px;
+	background-color: #241d1b;
+	color: #f5f0ed;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.Box11 p{
+	display: inline-block;
+	padding-left: 2%;
+}
+
+.Box4{
+	clear: both;
+	background-image: url(Imágenes/Fondo2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	background-position: center;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.Box4 img{
+	max-width: 100%;
+	height: 100%;
+}
+
+.Box4 .Box1Text p{
+	max-width: 55%;
+}
+
+.Box6{
+	background-color: #f5f0ed;
+}
+
+.Box5{
+	width: 50%;
+	float: left;
+	height: 260px;
+	padding: 5% 1% 2% 1%;
+	background-color: inherit;
+}
+
+.Box7{
+	width: 50%;
+	float: left;
+	height: 260px;
+	padding: 2% 1% 5% 1%;
+	background-color: inherit;
+}
+
+.Box5 img, .Box7 img{
+	display: block;
+	float: left;
+	height: 100%;
+}
+
+.Box5Text{
+	display: inline-block;
+	margin: auto;
+	position: absolute;
+	padding-left: 1%;
+	width: 35%;
+	hyphens: manual;
+}
+
+/* CHECK TEXT OVERFLOW */
+
+.Box3 a{
+	color: #d03b40;
+}
+
+.Box10 a{
+	color: #ded6c0;
+}
+
+a:hover{
+	color: #241d1b;
+	text-transform: uppercase;
+}
+
+.Header a:hover{
+	color: #d03b40;
+}
+
+span:hover{
+	background-color: #f5f0ed;
+	color: #241d1b;
+	transition: ease-in 0.3s;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1300px){
+
+.Box5{
+	width: 50%;
+	float: left;
+	height: 260px;
+	padding: 5% 1% 2% 1%;
+	background-color: inherit;
+}
+
+.Box7{
+	width: 50%;
+	float: left;
+	height: 260px;
+	padding: 2% 1% 5% 1%;
+	background-color: inherit;
+}
+
+.Box5 img, .Box7 img{
+	display: block;
+	float: left;
+	height: 50%;
+}
+
+.Box5Text{
+	display: inline-block;
+	margin: auto;
+	position: absolute;
+	padding-left: 1%;
+	width: 35%;
+	hyphens: manual;
+}
+
+.Box5Text p{
+	font-size: 14pt;
+}
+
+}
+
+@media screen and (max-width: 1200px){
+
+.Box2Text h2, .Box3Text h2{
+	width: 60%;
+	margin-bottom: 4%;
+	padding-bottom: 2%;
+}
+
+.Box2Text p, .Box3Text p{
+	width: 60%;
+	margin-top: 4%;
+	padding-top: 2%;
+}
+
+}
+
+@media screen and (max-width: 1000px){
+
+.Box1, .Box4{
+	height: 700px;
+}
+
+.Box1Text p{
+	display: block;
+	max-width: 60%;
+	text-align: center;
+	margin: auto;
+	padding-top: 2%;
+	color: #f5f0ed;
+}
+
+h2{
+	font-size: 24pt;
+}
+
+h3{
+	font-size: 22pt;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.Box5{
+	width: 100%;
+	float: none;
+	height: 200px;
+	padding: 5% 1% 2% 1%;
+	background-color: inherit;
+}
+
+.Box7{
+	width: 100%;
+	float: none;
+	height: 200px;
+	padding: 2% 1% 5% 1%;
+	background-color: inherit;
+}
+
+.Box5 img, .Box7 img{
+	display: block;
+	float: left;
+	height: 55%;
+	margin-right: 2%;
+}
+
+.Box5Text{
+	display: block;
+	margin: auto;
+	position: inherit;
+	padding: 0 1%;
+	width: unset;
+	max-width: 90%;
+	hyphens: manual;
+}
+
+.Box5Text p{
+	font-size: 14pt;
+}
+	
+}
+
+
+@media screen and (max-width: 980px){
+
+.Box5, .Box7{
+	width: 100%;
+	float: none;
+	padding: 5%;
+	max-height: 500px;
+	clear: both;
+	height: unset;
+}
+
+.Box5 img, .Box7 img{
+	display: block;
+	float: none;
+	height: 150px;
+	margin: auto;
+	margin-bottom: 3%;
+}
+
+.Box5Text{
+	display: inline-block;
+	margin: auto;
+	position: relative;
+	width: 100%;
+	hyphens: manual;
+	padding: 0;
+}
+
+}
+
+
+@media screen and (max-width: 900px){
+
+.lanzador{
+	display: block;
+}
+
+.menu{
+	display: none;
+}
+
+}
+
+
+@media screen and (max-width: 850px){
+
+	.Box2Text h2, .Box3Text h2{
+		width: 65%;
+		margin-bottom: 4%;
+		padding-bottom: 2%;
+	}
+	
+	.Box2Text p, .Box3Text p{
+		width: 65%;
+		margin-top: 4%;
+		padding-top: 2%;
+	}
+
+}
+
+
+@media screen and (max-width: 800px){
+
+.Box2, .Box3, .Box10{
+	width: 100%;
+	float: none;
+	height: 400px;
+}
+
+.Box2Text h2, .Box3Text h2{
+	width: 80%;
+	margin-bottom: 4%;
+	padding-bottom: 2%;
+}
+
+.Box2Text p, .Box3Text p{
+	width: 80%;
+	margin-top: 4%;
+	padding-top: 2%;
+}
+
+}
+
+
+
+@media screen and (max-width: 640px){
+
+/* GENERIC */
+
+h2{
+	font-size: 30pt;
+}
+
+h3{
+	font-size: 24pt;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+p{
+	font-size: 20pt;
+}
+
+hr{
+	width: 20%;
+	margin: 1% auto;
+	height: 3px;
+	background-color: #f5f0ed;
+	color: #f5f0ed;
+}
+
+span{
+	font-size: 16pt;
+	height: 60px;
+	width: 80%;
+	border: 3px solid #f5f0ed;
+	margin-top: 10%;
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold;
+}	
+
+/* SPECIFIC */
+
+	.Header{
+		position: fixed;
+		top: 0;
+		height: 60px;
+		width: 100%;
+		padding: 0 2%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.Box1, .Box4{
+		height: 800px;
+	}
+
+	.Box1Text p{
+		display: block;
+		max-width: 80%;
+		text-align: center;
+		margin: auto;
+		padding-top: 2%;
+		color: #f5f0ed;
+	}
+
+	.Box2, .Box3, .Box10{
+		width: 100%;
+		float: none;
+		height: 580px;
+	}
+
+	.Box2Text h2, .Box3Text h2{
+		width: 80%;
+		margin-bottom: 4%;
+		padding-bottom: 2%;
+	}
+	
+	.Box2Text p, .Box3Text p{
+		width: 80%;
+		margin-top: 4%;
+		padding-top: 2%;
+	}
+
+	.Box4 .Box1Text p{
+		max-width: 80%;
+	}
+
+	.Box6{
+		padding: 5% 0;
+	}
+
+	.Box10 .Box2Text h2{
+		width: 100%;
+	}
+
+	.Box11{
+		clear: both;
+		height: 200px;
+		background-color: #241d1b;
+		color: #f5f0ed;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	.Box11 p{
+		display: block;
+		padding-left: 5%;
+		padding-bottom: 1%;
+		float: none;
+	}
+}
