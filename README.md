@@ -7,7 +7,7 @@
 <p align="center">The teacher of the course provided the images, fonts, colour swatches and some basic styles for the mobile and desktop versions of the webpage, all in image form, for us to recreate and to design the transition media queries to ensure the webpage was responsive and consistently readable/accessible no matter the size of the screen where it would be previewed.</p>
 
 # Preview of the website
-<div align="center"><img src="https://github.com/robertidesigns/Course-Project-Domestika-Cafe-Oslo/assets/108548934/d10737c2-8b51-4c51-991f-1d1f3cdf4a7e"/>
+<div align="center">https://github.com/robertidesigns/Course-Project-Domestika-Cafe-Oslo/assets/108548934/d10737c2-8b51-4c51-991f-1d1f3cdf4a7e
 </div>
 
 ## License
